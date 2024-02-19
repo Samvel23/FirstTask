@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            .Test1{
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: right;
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+            .Test1 button {
+                width: 300px;
+                height: 50px;
+                font-size: 16px;
+                margin-bottom: 350px;
+                margin-right: 300px;
+            }
+            .Test2 {
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: left;
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+            .Test2 button{
+                width: 300px;
+                height: 50px;
+                font-size: 16px;
+                margin-bottom: 350px;
+                margin-left: 300px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="Test1">
+            <button onclick ="openUserMatematics()">Matematics</button>
+        </div>
+        <div class="Test2">
+            <button onclick ="openUserChsmistry()">Chemistry</button>
+        </div>
+        <header>
+            <h1>Quiz</h1>
+        </header>
+        <script>
+            function openUserChsmistry() {
+                window.location.href = "chemistry.html";
+            }
+            function openUserMatematics() {
+                window.location.href = "matematics.html";
+            }
+        </script>
+    </body>
+</html>
