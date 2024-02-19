@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Quiz</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            header {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #f9f9f9;
+                text-align: center;
+            }
+            h1 {
+                color: #e60000;
+            }
+            .user{
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: right;
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+            .user button {
+                width: 300px;
+                height: 50px;
+                font-size: 16px;
+                margin-bottom: 350px;
+                margin-right: 300px;
+            }
+            .admin {
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: left;
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+            .admin button{
+                width: 300px;
+                height: 50px;
+                font-size: 16px;
+                margin-bottom: 350px;
+                margin-left: 300px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="admin">
+            <button>Admin</button>
+        </div>
+        <div class="user">
+            <button onclick="openUserPage()">User</button>
+        </div>
+        <header>
+            <h1>Quiz</h1>
+        </header>
+
+        <script>
+            function openUserPage() {
+                window.location.href = "user.html";
+            }    
+        </script>
+    </body>
+</html>
